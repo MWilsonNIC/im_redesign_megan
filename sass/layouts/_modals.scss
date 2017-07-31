@@ -85,7 +85,7 @@
 }
 
 .profile-info {
-  top: -15px;
+  top: -45px;
 }
 
 .profile-info a, .profile-info li {
@@ -152,6 +152,11 @@
   font-weight: $sans_light;
 }
 
+.student-info.profile-info {
+  top: -30px;
+}
+
+/* Index modals */
 .faq-modal h2, .faq-modal h3 {
   text-transform: lowercase;
   color: $dark_blue;
@@ -339,4 +344,8 @@
 
 #html-css-example h2 {
   text-align: left;
+}
+
+.info-right-column {
+  margin-top: 15px;
 }
