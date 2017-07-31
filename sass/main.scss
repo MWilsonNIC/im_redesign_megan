@@ -13,10 +13,12 @@ $ sass main.scss main.css
 @import "layouts/main-layout";
 @import "layouts/panels";
 @import "layouts/modals";
+@import "layouts/lightbox";
 @import "pages/current-students";
 @import "pages/faculty";
 @import "pages/students-alumni";
 @import "pages/what-we-do";
+@import "pages/how-we-made-this";
 /* Be mindful of load order, especially here */
 @import "responsive/responsive-gt-1800";
 @import "responsive/responsive-gt-1500";

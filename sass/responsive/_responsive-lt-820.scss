@@ -18,6 +18,12 @@
     max-height: 243px;
   }
 
+  .info-icon svg {
+    max-height: 60%;
+    margin: 25px;
+    margin-top: 35px;
+  }
+
   .panel h3 {
     font-size: 18px;
   }
@@ -30,5 +36,9 @@
   main .info-icon-container .row {
     padding: 0px 0px;
     padding-top: 25px;
+  }
+
+  .navbar-brand-words {
+    font-size: 0.9em;
   }
 }

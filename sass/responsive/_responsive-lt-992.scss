@@ -44,4 +44,16 @@
     background-color: $dark_blue_hover;
     transition: $standard-transition;
   }
+
+  .navbar-brand-words {
+    font-size: 0.6em;
+  }
+
+  .fixed-column {
+    width: 370px;
+  }
+
+  #how-we-made-this .faculty-panel {
+    max-height: 228px;
+  }
 }

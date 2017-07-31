@@ -30,9 +30,18 @@
   color: $white;
 }
 
-.top-modal-row {
-  margin-top: 75px;
-  margin-bottom: 50px;
+.top-modal-row.row {
+  position: fixed;
+  width: inherit;
+  border-right: $border;
+  background-color: $white;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  z-index: 1000;
+}
+
+.modal-row {
+  margin-top: 110px;
 }
 
 /* Profile Modals */
@@ -51,6 +60,7 @@
 }
 
 .profile-label h2, .profile-label h4 {
+  text-transform: lowercase;
   color: $white;
   margin: 0px;
 }
@@ -93,6 +103,10 @@
   width: 100%;
   border-width: 1px;
   border-color: $dark_blue;
+}
+
+.profile-info {
+  margin-top: 14px;
 }
 
 .student-info p {
@@ -168,7 +182,7 @@
   font-family: $font_sans;
   font-weight: $sans_light;
   color: $dark_gray;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .where-who-container-2 {
@@ -211,6 +225,14 @@
   margin: 0 auto;
 }
 
+.student-package-design {
+	margin-top: 40px;
+}
+
+.caption-student-package-design {
+	margin-top: 40px;
+}
+
 .faq-modal-2 {
   padding-right: 5%;
 }
@@ -224,6 +246,15 @@
 .modal-fade-image img {
   opacity: 1;
   transition: 3s;
+}
+
+.box-shadow {
+  box-shadow: 3px 1px 9px #888888;
+}
+
+.where-who-container.box-shadow {
+  box-shadow: 5px -5px 7px #888888;
+  box-sizing: 95%;
 }
 
 .faq-modal-2-caption {
@@ -246,4 +277,66 @@
   opacity: 0;
   transition: 3s;
   padding-right: 15px;
+}
+
+/* JavaScript Panel */
+#javascript-interaction {
+  color: $dark_gray;
+}
+
+#javascript-interaction .rotate {
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+#javascript-interaction .sans-body {
+  font-size: 0.8em;
+  font-weight: $sans_light;
+}
+
+@-webkit-keyframes rotate  {
+  from {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.rotate {
+  -webkit-animation: rotate 15s linear infinite;
+  -moz-animation: rotate 15s linear infinite;
+  -ms-animation: rotate 15s linear infinite;
+  -o-animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite;
+}
+
+#html-css-example {
+  color: $dark_gray;
+  background-color: $light_gray;
+  padding: 25px;
+}
+
+#html-css-example h2 {
+  text-align: left;
 }
