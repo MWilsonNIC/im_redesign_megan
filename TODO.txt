@@ -1,2 +1,0 @@
-• Optimize logo image
-• Create fallback loading for CDN libraries
