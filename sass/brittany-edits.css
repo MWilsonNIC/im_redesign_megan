@@ -16,6 +16,13 @@
 	font-size: 1.2em;
 }
 
+/* Megan edit test*/ 
+@media (max-width: 767px){
+  #current-students-info .col-width-container {
+    margin-left: 15px;
+  }
+}
+
 .col-width-container {
 	width: 85%;
 }

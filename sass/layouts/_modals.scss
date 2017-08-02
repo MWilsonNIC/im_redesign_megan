@@ -49,6 +49,12 @@
   position: relative;
   margin-bottom: 20px;
 }
+/*Megan edit*/
+@media (max-width: 767px){
+  .profile-image {
+    margin-bottom: 35px;
+  }
+}
 
 .profile-label {
   background-color: $dark_blue;
