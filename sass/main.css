@@ -2348,6 +2348,9 @@ body, .serif, .serif p, .serif h2, .serif h3, .serif h4, .serif h5, .serif h6 {
   color: #377ab7;
   font-family: "Crimson Text", serif; }
 
+.text-white {
+  color: #ffffff; }
+
 .navbar {
   border-bottom: 1px solid #e7e7e7; }
 
@@ -2839,17 +2842,18 @@ main .container {
   width: 0;
   margin-left: -16px;
   /* Ignore parent padding */
-  height: 100%;
+  height: 88vh;
   /* 0 width - change this with JavaScript */
   position: fixed;
   /* Stay in place */
   z-index: 1;
   /* Stay on top */
-  top: 0;
+  bottom: 0;
   opacity: 0;
   background-color: #ffffff;
   overflow-x: hidden;
   /* Disable horizontal scroll */
+  overflow-y: auto;
   transition: 0.8s;
   /* 0.5 second transition effect to slide in the slide-modal */
   margin-top: 101px;
@@ -2879,6 +2883,10 @@ main .container {
   position: relative;
   margin-bottom: 20px; }
 
+/*Megan edit*/
+@media (max-width: 767px) {
+  .profile-image {
+    margin-bottom: 35px; } }
 .profile-label {
   background-color: #377ab7;
   position: absolute;
@@ -3121,6 +3129,17 @@ main .container {
 
 .info-right-column {
   margin-top: 15px; }
+
+table.lab-schedule {
+  width: 100%; }
+
+.lab-schedule td {
+  height: 35px;
+  min-width: 100px;
+  border: 1px solid #e7e7e7; }
+
+.lab-schedule td.classroom {
+  height: 75px; }
 
 .ekko-lightbox-nav-overlay a span {
   font-size: 2em;
@@ -3387,7 +3406,9 @@ a.blue-link {
     padding-top: 201px; }
 
   .slide-modal {
-    margin-top: 201px; }
+    margin-top: 201px;
+    height: 100%;
+    top: 0; }
 
   .panel, .info-icon, .faculty-panel {
     overflow: hidden;
@@ -3433,7 +3454,7 @@ a.blue-link {
     font-size: 1em; }
 
   /* Main */
-  .panel, .info-icon, .faculty-panel {
+  .panel, .info-icon, .faculty-panel, #how-we-made-this .faculty-panel {
     max-height: 205px; }
 
   .faq-container .empty-panel.faq-panel {
@@ -3457,7 +3478,8 @@ a.blue-link {
     padding-top: 20px; }
 
   .slide-modal {
-    margin-top: 0px; }
+    margin-top: 0px;
+    height: 100vh; }
 
   main .container {
     padding-top: 15px; } }
@@ -3480,6 +3502,9 @@ a.blue-link {
   .fa {
     font-size: 20px; }
 
+  .panel-info .fa {
+    font-size: 1.2em; }
+
   .social {
     height: 30px;
     width: 30px;
@@ -3489,7 +3514,8 @@ a.blue-link {
     line-height: 10px; }
 
   .blue-icon {
-    font-size: 6px; }
+    font-size: 6px;
+    bottom: 24px; }
 
   /* Main Body */
   body {
@@ -3501,7 +3527,7 @@ a.blue-link {
   .dropdown-menu li a {
     font-size: 0.7em !important; }
 
-  .panel, .info-icon, .faculty-panel {
+  .panel, .info-icon, .faculty-panel, #how-we-made-this .faculty-panel {
     max-height: 179px; }
 
   .info-icon {
