@@ -5,7 +5,7 @@
   }
 
   /* Main */
-  .panel, .info-icon, .faculty-panel {
+  .panel, .info-icon, .faculty-panel, #how-we-made-this .faculty-panel {
     max-height: 205px;
   }
 
@@ -37,6 +37,7 @@
 
   .slide-modal {
     margin-top: 0px;
+    height: 100vh;
   }
 
   main .container {
