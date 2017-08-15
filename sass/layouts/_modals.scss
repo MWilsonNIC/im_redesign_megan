@@ -10,10 +10,10 @@
 .slide-modal, .modal-on-modal {
     width: 0;
     margin-left: -16px; /* Ignore parent padding */
-    height: 100%; /* 0 width - change this with JavaScript */
+    height: 88vh; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 0;
+    bottom: 0;
     opacity: 0;
     background-color: $white;
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -355,4 +355,18 @@
 
 .info-right-column {
   margin-top: 15px;
+}
+
+table.lab-schedule {
+  width: 100%;
+}
+
+.lab-schedule td {
+  height: 35px;
+  min-width: 100px;
+  border: $border;
+}
+
+.lab-schedule td.classroom {
+  height: 75px;
 }
