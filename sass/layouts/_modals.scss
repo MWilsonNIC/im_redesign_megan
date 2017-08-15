@@ -17,7 +17,7 @@
     opacity: 0;
     background-color: $white;
     overflow-x: hidden; /* Disable horizontal scroll */
-    overflow-y: auto;
+    overflow-y: auto; /*09.03 attempt to fix scrsolling issue*/
     transition: 0.8s; /* 0.5 second transition effect to slide in the slide-modal */
     margin-top: 101px;
     padding: 0px 15px;
