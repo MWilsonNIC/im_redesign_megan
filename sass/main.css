@@ -26,7 +26,7 @@ $ sass main.scss main.css
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
@@ -43,24 +43,24 @@ $ sass main.scss main.css
   font-size: 5em; }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center; }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   list-style-type: none; }
   .fa-ul > li {
     position: relative; }
 
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center; }
   .fa-li.fa-lg {
-    left: -1.85714em; }
+    left: -1.8571428571em; }
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -2841,21 +2841,15 @@ main .container {
 .slide-modal, .modal-on-modal {
   width: 0;
   margin-left: -16px;
-  /* Ignore parent padding */
-  height: 88vh;
-  /* 0 width - change this with JavaScript */
+  height: 93vh;
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Stay on top */
-  bottom: 0;
+  top: 0;
   opacity: 0;
   background-color: #ffffff;
   overflow-x: hidden;
-  /* Disable horizontal scroll */
   overflow-y: auto;
   transition: 0.8s;
-  /* 0.5 second transition effect to slide in the slide-modal */
   margin-top: 101px;
   padding: 0px 15px;
   border: 1px solid #e7e7e7;
